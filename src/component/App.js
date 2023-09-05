@@ -29,25 +29,18 @@ import StartScreen from './component/StartScreen';
 import PuzzleScreen from './component/PuzzleScreen';
 import AssembleScreen from './component/AssembleScreen';
 import ResultScreen from './component/ResultScreen';
-import part1 from './component/part1.png';
-import part2 from './component/part2.png';
-import part3 from './component/part3.png';
-import part4 from './component/part4.png';
-import part5 from './component/part5.png';
-
+import part1 from './component/part1.jpg';
 function App() {
   const [currentScreen, setCurrentScreen] = useState('start'); // 'start', 'puzzle', 'assemble', 'result'
   const [selectedParts, setSelectedParts] = useState([]);
   const [assembledImage, setAssembledImage] = useState(null);
 
   const partsData = [
-    { name: 'CPU', image: part1 },
-   
-    { name: 'SPEAKER', image: part3 },
-    { name: 'KEYBOARD', image: part4 },
-    { name: 'MONITOR', image: part5 },
-    { name: 'MOUSE', image: part2 },
-   
+    { name: 'Part 1', image: part1 },
+    { name: 'Part 2', image: part1 },
+    { name: 'Part 3', image: part1 },
+    { name: 'Part 4', image: part1 },
+    { name: 'Part 5', image: part1 },
   ];
 
   const handleStartClick = () => {
